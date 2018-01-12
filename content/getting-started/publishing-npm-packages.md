@@ -9,6 +9,7 @@ featured: true
 
 You can publish any directory that has a `package.json` file, for example, a [node module](/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here]
 (https://docs.npmjs.com/getting-started/packages).
+
 ## Creating a user
 
 To publish, you must be a user on the npm registry. If you aren't a user, create an account by using  `npm adduser`. If you created a user account on the site, use `npm login` to store the credentials on your client.
@@ -24,13 +25,17 @@ To publish, you must be a user on the npm registry. If you aren't a user, create
 
 ## Publishing the package
 
+### First, choose a name
+
 Choose a unique name for your package. Try to choose a descriptive name that:
 
 *  isn't already owned by somebody else
-*  is not spelled like another name, but with typos
+*  is not spelled like another name, except with typos
 *  will not confuse others about the authorship
+*  meets [npm policy guidelines](https://docs.npmjs.com/policies/conduct). Don't name your package something offensive.
 
-*Note: Naming is not an issue if you are working with [scopes](https://docs.npmjs.com/cli/version).*
+
+*Note: The first 3 caveats don't apply if you are using [scopes](https://docs.npmjs.com/cli/version).*
 
 Use `npm publish` to publish the package.
 
